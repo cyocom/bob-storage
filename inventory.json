@@ -1,0 +1,11 @@
+{
+  "updated": "2026-08-23",
+  "spaces": {
+    "vehicle": { "available": 12, "price": 50 },
+    "small": { "available": 20, "price": 65 },
+    "medium": { "available": 12, "price": 75 },
+    "large": { "available": 8, "price": 85 },
+    "xl": { "available": 8, "price": 95 },
+    "xxl": { "available": 2, "price": 125 }
+  }
+}
