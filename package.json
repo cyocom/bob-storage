@@ -1,0 +1,11 @@
+{
+  "name": "bob-storage",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-pages.mjs",
+    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=bob-storage"
+  },
+  "devDependencies": {
+    "wrangler": "^4.28.0"
+  }
+}
