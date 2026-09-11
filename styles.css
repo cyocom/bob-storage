@@ -14,7 +14,7 @@
   --font-display: "Bebas Neue", Impact, sans-serif;
   --font-body: "Source Sans 3", "Segoe UI", sans-serif;
   --max: 1080px;
-  --header-h: 4rem;
+  --header-h: 6rem;
 }
 
 *,
@@ -55,7 +55,7 @@ a {
   align-items: center;
   gap: 1rem;
   min-height: var(--header-h);
-  padding: 0.65rem 1.25rem;
+  padding: 0.9rem 1.5rem;
   background: rgba(238, 240, 242, 0.94);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(18, 20, 23, 0.08);
@@ -67,13 +67,13 @@ a {
   gap: 0.55rem;
   text-decoration: none;
   font-family: var(--font-display);
-  font-size: 1.55rem;
+  font-size: 2.3rem;
   letter-spacing: 0.06em;
 }
 
 .brand-mark img {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 3.15rem;
+  height: 3.15rem;
   object-fit: contain;
   object-position: center;
 }
@@ -84,8 +84,16 @@ a {
   margin-left: auto;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
 .site-nav a,
 .header-call,
+.header-pay,
 .map-link,
 .rate-cta {
   text-decoration: none;
@@ -93,7 +101,7 @@ a {
 
 .site-nav a {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: var(--ink-soft);
 }
 
@@ -102,11 +110,17 @@ a {
   color: var(--sunset-deep);
 }
 
-.header-call {
+.header-call,
+.header-pay {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: var(--sunset-deep);
   white-space: nowrap;
+}
+
+.header-pay,
+.header-pay:hover {
+  color: var(--avail);
 }
 
 .hero {
@@ -564,8 +578,23 @@ a {
     display: none;
   }
 
-  .header-call {
-    font-size: 0.85rem;
+  .header-actions {
+    margin-left: auto;
+    gap: 0.7rem;
+  }
+
+  .brand-mark {
+    font-size: 1.7rem;
+  }
+
+  .brand-mark img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .header-call,
+  .header-pay {
+    font-size: 1rem;
   }
 
   .hero-content {
